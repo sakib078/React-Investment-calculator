@@ -72,10 +72,29 @@ body {
   text-align: right;
 }
 
-#result p {
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+#result th, #result td {
+  padding: 0.75rem;
+  border: 1px solid #76c0ae;
+  text-align: right;
+}
+
+#result th {
+  color: #e1eeeb;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#result td {
   color: #c2e9e0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
 }
 
 .center {

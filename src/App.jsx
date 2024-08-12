@@ -20,6 +20,7 @@ function camelize(text) {
   return a.substring(0, 1).toLowerCase() + a.substring(1);
 }
 
+
 function normalizeObject(inputValue)
 {
   return inputValue.map(fields =>
@@ -81,6 +82,9 @@ function App() {
         /> 
     ));
 
+
+    console.log(inputValue);
+
     // normalize the inputValue object (label into camelCase and convert value to intiger data Type)
     const updatedValue = normalizeObject(inputValue);
     
@@ -97,9 +101,7 @@ function App() {
             <div id="user-input">
                 {data}
             </div>
-            <div id="result">
-               { <Result results={finalResult}/>}
-            </div>
+            {<Result results={finalResult} />}
         </>
     );
 }

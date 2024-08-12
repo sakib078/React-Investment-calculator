@@ -3,11 +3,12 @@ export default function Input({ id, label, value, onSelect }) {
     return (
         <div className="input-group" >
             <label>{label}</label>
-            <input 
-                type="text"
+            <input
+                type="number"
                 id={id}
                 defaultValue={value}
                 onChange={onSelect}
+                required
             />
         </div>
     );
