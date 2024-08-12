@@ -53,6 +53,11 @@ body {
   text-transform: uppercase;
 }
 
+.input-group input :active {
+  border: 1px solid #c12c2c;
+  border-radius: 1.0rem;
+}
+
 .input-group input {
   width: 100%;
   padding: 0.75rem;
@@ -63,6 +68,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
+
 
 #result {
   max-width: 50rem;
